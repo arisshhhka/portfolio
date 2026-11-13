@@ -1,0 +1,83 @@
+:root {
+  --color-background: #ffffff;
+  --color-background-soft: #edf1eb;
+  --color-text: rgb(50, 50, 50);
+  --color-text-muted: rgb(81, 84, 81);
+  --color-accent: rgb(11, 82, 18);
+  --color-border: rgb(167, 167, 167);
+  --color-on-accent: rgb(241, 240, 240);
+  --color-light-green: rgb(218, 226, 62);
+  --color-dark-green: rgb(135, 140, 36);
+  --color-backround-green: rgb(11, 45, 12);
+  --color-footer: rgb(34, 53, 36);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+.container {
+  width: min(100% - 32px, 1200px);
+  margin-inline: auto;
+}
